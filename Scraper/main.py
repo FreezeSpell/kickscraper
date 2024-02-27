@@ -75,6 +75,7 @@ def scrapeFile(skippedEntriesNmbr,
         currencyIndex = listdata[i].index("currency")
         symbolIndex = listdata[i].index("currency_symbol")
         slugIndex = listdata[i].index("slug")
+        categoryIndex = listdata[i].index("analytics_name")
         try:
             goalMoney = entry[goalIndex+6:pledgeIndex-2]
             fundedMoney = entry[pledgeIndex+9:stateIndex-2]
@@ -82,6 +83,7 @@ def scrapeFile(skippedEntriesNmbr,
             fundedMoney = int(round(float(fundedMoney)))
             currency = entry[currencyIndex+11:symbolIndex-3]
             projectStatus = entry[stateIndex+8:slugIndex-3]
+            
 
             if fundedMoney >= goalMoney:
                 goalReached = True
@@ -175,3 +177,5 @@ def endScrape(startTime: int, skippedEntries: list, skippedEntriesNmbr: int) -> 
 if __name__ == "__main__":
     scrapeFile(skippedEntriesNmbr, skippedEntries, filteredEntriesNmbr, filteredEntries, startEntry, finalEntry, sleepTimer)
     endScrape(startTime, skippedEntries, skippedEntriesNmbr)
+    
+##
