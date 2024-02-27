@@ -1,10 +1,17 @@
-###A very simple script that counts the number of entries in the databse.
+filePath = "Kickstarter_2023-10-12T03_20_02_365Z 2.json"
 
-fileLocation = "Python/Outreaching CB/Scraper/Kickstarter Oct 23.json"
-# Test
-search_word = 'blurb'
-with open(fileLocation, "r") as f:
-    data = f.read()
-    total = data.count(search_word)
+def countEntries(filePath: str) -> int:
+    """
+    Counts the number of entries in a file.
 
-print(total)
+    Args:
+        filePath (str): The file to count the entries of.
+
+    Returns:
+        int: The number of entries in the file.
+    """
+    data = open(filePath)
+    listdata = data.readlines()
+    
+    count = 0
+    
