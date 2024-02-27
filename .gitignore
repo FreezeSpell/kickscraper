@@ -5,3 +5,4 @@ Scraper/Kickstarter Sept 23.json
 Scraper/outputs
 **/.DS_Store
 **/.venv
+Scraper/SECRET.py
