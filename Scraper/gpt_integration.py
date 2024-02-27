@@ -5,7 +5,7 @@
 import os
 import openai
 #import main
-from imports import openaiKey
+from Scraper.SECRET import openaiKey
 
 # Set openai.api_key to the OPENAI environment variable
 openai.api_key = openaiKey
