@@ -36,12 +36,13 @@ Some potential areas for improvement in the project include:
 - Adding support for scraping straight from websites using BeautifulSoup.
 
 ## :rocket: Running the project:
+(Make sure you have Python and Git installed)
 To run the project, follow these steps:
 1. Clone the repository from GitHub: `git clone https://github.com/freezespell/special-octo-barnacle.git`
 2. Install the required dependencies: `pip install -r requirements.txt` 
 3. Navigate to the `Scraper` directory: `cd special-octo-barnacle/Scraper`
 4. Modify the scraper configuration in `config.py` to specify the target website and data extraction criteria.
-5. Run the scraper: `python scraper.py`
+5. Run the scraper: `python main.py`
 6. The extracted data will be stored in a CSV file named `output.csv`.
 
 <!-- TODO: add a `config.py` -->
